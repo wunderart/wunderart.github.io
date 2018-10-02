@@ -14,7 +14,7 @@
         <link rel="apple-touch-icon" href="favicon.png">
         <link rel='favicon' href='favicon.png' />
         <link rel="shortcut icon" href="favicon.png">
-
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -29,56 +29,55 @@
           <div class="menu clearfix desktop">
            <a class="logo" href="index.html">
             Wunder<span style="font-weight:bold; color: grey">Art</span></a>
-            <a href="index.html">Blog</a><a href="about.html">About Me</a>
-            <span>    		    			
-                <a class="ls" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>                                                                        
+            <a href="blog.html">Blog</a>
+            <a href="photography.html">Photography</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate <i class="fa fa-heart" aria-hidden="true"></i></a>
+            <span>
+                <a class="ls" href="https://www.instagram.com/spechtra/?hl=end"/><i class="fa fa-instagram" aria-hidden="true"></i></a>                                                                         
                 <a class="ls" href="https://www.facebook.com/theyearningofdead"/><i class="fa fa-facebook-official"></i></a>
+                
+            </span>
+        
+        </div>
+
+        <div class="menu clearfix mobile">           
+              <a class="logo" href="index.html">
+            Wunder<span style="font-weight:bold; color: grey">Art</span></a>
+            <a href="blog.html">Blog</a>
+            <a href="photography.html">Photography</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate <i class="fa fa-heart" aria-hidden="true"></i></a>
+            <span>
+                <a class="ls" href="https://www.instagram.com/spechtra/?hl=end"/><i class="fa fa-instagram" aria-hidden="true"></i></a>                                                                         
+                <a class="ls" href="https://www.facebook.com/theyearningofdead"/><i class="fa fa-facebook-official"></i></a>
+                
             </span>
         </div>
-        <div class="menu clearfix mobile">
-           <div>
-            <a class="logo" href="index.html">wunder<span style="font-weight:bold;">Art</span></a>
-            <span>    					
-             <a class="ls" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>                                                                       
-             <a class="ls" href="http://www.facebook.com/pages/S"><i class="fa fa-facebook-official"></i></a>              
-         </span>                
+
+        </nav>
+
+        <script src="js/plugins.min.js"></script>
+        <script src="js/vendor/masonry.pkgd.min.js"></script>
+        <script src="js/main.min.js"></script>
+
+
+        <div id="home-container" class="home-container"> 
+         <div class="grid" id="grid"></div>     
      </div>
-     <div>
-        <a href="index.html">Work</a><a href="about_me.html">About Me</a><a href="contact.html">You&Me</a>
-    </div>
 
-</div>            
-</div>
-</nav>
+     <script>
 
-   <!--  <noscript>
-    	<p style="text-align:center; font-weight: bold; font-size: 150%; color: grey;"> uses Javascript. Please, activate Javascript to view this site. Thank you.</p>
-    </noscript> -->
-
-    <script src="js/plugins.min.js"></script>
-    <script src="js/vendor/masonry.pkgd.min.js"></script>
-    <script src="js/main.min.js"></script>
-    
-    
-    <div id="home-container" class="home-container"> 
-    	<div class="grid" id="grid"></div>     
-    </div>
-    <div class="grid-item-loader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
-    <div class="scroll-hint"><i class="fa fa-chevron-down fa-2x"></i></div>  
-
-    <script>
-
-    	var pageImg = [];
-        {       
-                for(let i=1; i<28; i++)                                                                         
-                pageImg.push({ ref: '/wall/1.html', image: 'images/'+(i)+'.jpg', caption: 'Abstract Utopias' });                 
+         var pageImg = [];
+         {       
+            for(let i=1; i<28; i++)                                                                         
+                pageImg.push({ ref: '/wall/'+i+'.html', image: 'images/'+(i)+'.jpg', caption: 'Abstract Utopias' });                 
         }   
     </script>
-    <script src="js/index.min.js"></script>
-    <!-- <script src="js/loadingFrame.js"></script> -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+   <script src="js/index.min.js"></script>
+ 
 </body>
 
 </html>
